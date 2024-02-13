@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background: #fff;
+}
+.dark{
+  --bg-color: #efefef;
+  --text-color: #131311;
+  --second-color: #484848;
+  header{
+    background-color: rgba(255, 255, 255, 0.98);
+}
+
+.animated-text span::after{
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: #efefef;
+  border-left: 2px solid #00CED1;
+  right: -8px;
+  animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+.box {
+  background: rgba(255, 255, 255, 0.98); 
+}
+.contact-form form input,
+form textarea {
+  background: rgba(255, 255, 255, 0.98);
+}
+}
