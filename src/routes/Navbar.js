@@ -1,11 +1,9 @@
 import React ,{useRef, useState} from "react";
 import { Link,BrowserRouter } from "react-router-dom";
 import DarklightMode from "../components/Dark&lightMode";
-import { IoMenu } from "react-icons/io5";
 import { FaTimes , FaBars } from "react-icons/fa";
 
 const Navbar = () => {
-const navRef=useRef();
 
 const showNavbar = () => {
 	navRef.current.classList.toggle(
@@ -16,7 +14,7 @@ const showNavbar = () => {
   return <div className="navbar_list">
   <header>
 		<a href="#" className="logo">Ach<span>DEV</span>Web</a>
-		<nav ref={navRef}>
+		<nav>
 			<a href="/#">Home</a>
 			<a href="/About">About Me</a>
             <a href="/Services">Services</a>
