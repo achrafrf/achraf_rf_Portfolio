@@ -1,7 +1,9 @@
 import React from "react";
-
+import { useRef } from "react";
+import { forwardRef } from "react";
 const About = () => {
-  return <div>
+	const ref =useRef(null);
+  return <div ref={ref}>
   <section className="about" id="about">
 		<div className="about-img">
 			<img src="2eme favorite.png"/>
@@ -23,4 +25,4 @@ const About = () => {
   </div>;
 };
 
-export default About;
+export default forwardRef(About);

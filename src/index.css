@@ -14,8 +14,26 @@ body {
   --bg-color: #efefef;
   --text-color: #131311;
   --second-color: #484848;
-  header{
+  nav{
     background-color: rgba(255, 255, 255, 0.98);
+}
+.footer{
+  background-color: rgba(255, 255, 255, 0.98);
+}
+.footer-col h4{
+  color: var(--text-color);
+}
+.footer-col ul li a{
+  color: var(--text-color);
+}
+.footer-col .social-links a{
+  color: var(--text-color);
+}
+nav .menu span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: var(--text-color);
+  border-radius: 0.2rem;
 }
 
 .animated-text span::after{

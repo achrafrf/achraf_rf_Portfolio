@@ -25,65 +25,9 @@ body {
     background: var(--bg-color);
     color: var(--text-color);
 }
-.logo {
-    color: var(--text-color);
-    position: relative;
-    left: 75px;
-    font-size: 35px;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
+
 span {
     color: var(--main-color);
-}
-header {
-    width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	height: 80px;
-	padding: 0 2rem;
-	background-color: var(--second-bg-color);
-	color: var(--textColor);
-}
-
-nav a {
-	margin: 0 1rem;
-	color: var(--textColor);
-	text-decoration: none;
-}
-
-nav a:hover {
-	color: var(--main-color);
-    transition: 1s;
-}
-header .nav-btn {
-	padding: 5px;
-	cursor: pointer;
-	background: transparent;
-	border: none;
-	outline: none;
-	color: var(--textColor);
-	visibility: hidden;
-	opacity: 0;
-	font-size: 1.8rem;
-
-}
-
-header div,
-nav {
-	display: flex;
-	align-items: center;
-}
-
-.nav-btn{
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    outline: none;
-    color: var(--text-color);
-    opacity: 0;
-    visibility: hidden;
 }
 .section{
     display: flex;
@@ -95,14 +39,6 @@ nav {
     left: 75px;
     bottom: 70px;
 }
-.navlist a:hover {
-    color: var(--main-color);
-}
-
-.navlist a.active {
-    color: var(--main-color);
-}
-
 #menu-icon {
     font-size: 35px;
     color: var(--text-color);
@@ -706,23 +642,27 @@ form textarea {
         bottom: 200px;
     }
     .DarklightMode{
-        position: relative;
+        position: absolute;
         top: 90px;
     }
+    .btn{
+        position: relative;
+        top: 25px;
+    }
     .about {
-        grid-template-columns: 1fr; /* Change to a single column layout for smaller screens */
+        grid-template-columns: 1fr; 
     }
 
     .about-img img {
-        max-width: 100%; /* Adjust image width for smaller screens */
+        max-width: 100%; 
     }
 
     .about-text {
-        padding: 1rem; /* Adjust padding for smaller screens */
-        text-align: center; /* Center text for better readability */
+        padding: 1rem; 
+        text-align: center; 
     }
     .services-content {
-        grid-template-columns: 1fr; /* Change to a single column layout for smaller screens */
+        grid-template-columns: 1fr; 
         gap: 1rem;
         display: block;
     }
